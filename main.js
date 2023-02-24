@@ -2,15 +2,15 @@ counter = 1
 
 function createElem(){
     
-    let newInput = document.getElementById("input").value
+    var newInput = document.getElementById("input").value
 
     if (newInput !== ""){
 
-        let newDiv = document.createElement('div')
+        var newDiv = document.createElement('div')
         newDiv.className = "grid"
         newDiv.id = "gridElem"+counter
         
-        let elements = document.getElementById("elements")
+        var elements = document.getElementById("elements")
         
         elements.appendChild(newDiv)
         
@@ -26,11 +26,12 @@ document.body.addEventListener('keypress', (e) => {if(e.key == 'Enter') createEl
 
 function remove(){
     
-    let myMain = document.getElementById("elements");
+    var myMain = document.getElementById("elements");
     while (myMain.firstChild) {
     myMain.removeChild(myMain.lastChild);
     }
-     counter = 1
+    
+    counter = 1
 
 }
 
