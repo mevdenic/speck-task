@@ -1,0 +1,81 @@
+
+body{
+    margin: 6em 15em;
+    font-family: 'Saira', sans-serif;
+    padding: 0;
+}
+
+header{
+    letter-spacing: 0.06rem;
+    font-size: 1.2rem;
+    color: rgb(56, 56, 56);   
+    
+}
+
+
+.functionality{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+#input{
+    font-size: 1rem;
+    padding: 0.6em 1em;
+    margin-right: 1.6rem;
+    width: 30ch;
+    border: black 1px solid;
+    border-radius: 6px;
+}
+
+#input:focus{
+    outline: none;
+    border: rgb(182, 3, 3) 1px solid;
+}
+
+#add{
+    font-size: 1rem;
+    padding: 0.6em 2em;
+    border: rgb(182, 3, 3) 1px solid;
+    border-radius: 6px;
+    font-weight: 700;
+    background-color: rgba(255, 0, 0, 0.068);
+    color: rgb(182, 3, 3);
+    transition: 0.5s;
+}
+
+#add:hover{
+    background-color: rgb(182, 3, 3);
+    color: white;
+    cursor: pointer;
+
+}
+
+#remove{
+    background-color: white;
+    border: none;
+    text-decoration: underline;
+    color: rgb(182, 3, 3);
+    font-size: 1rem;
+}
+
+#remove:hover{
+    cursor: pointer;
+
+}
+
+#elements{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.grid{
+    font-size: 1.8rem;
+    text-align: center;
+    border-radius: 20px;
+    padding: 1rem;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
